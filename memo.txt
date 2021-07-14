@@ -1,0 +1,12 @@
+sam init --runtime go1.x --name aaaaaaa
+sam local invoke HelloWorldFunction
+go get
+make build
+sam local invoke
+sam  deploy --guided
+
+勝手にロールができるので、
+ポリシーをつくってわりあてる
+ポリシーはSystemManager の GetParamater
+AWSじょうで実行できるようになる。
+
